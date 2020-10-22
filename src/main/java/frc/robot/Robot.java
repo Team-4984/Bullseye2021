@@ -9,6 +9,8 @@ package frc.robot;
 
 import edu.wpi.first.wpilibj.TimedRobot;
 import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
+import edu.wpi.first.wpilibj2.command.Command;
+import frc.robot.commands.AutonomousCommand;
 import frc.robot.subsystems.DriveTrain;
 import edu.wpi.cscore.UsbCamera;
 import edu.wpi.cscore.VideoSink;
@@ -18,7 +20,8 @@ import edu.wpi.first.cameraserver.CameraServer;
 public class Robot extends TimedRobot {
   
   public static DriveTrain driveTrain = new DriveTrain();
-
+  Command m_autonomousCommand;
+  Command m_MainautonomousCommand;
  // private static final boolean myAutotoggle = false;
 
   public static RobotContainer m_robotContainer;
@@ -35,26 +38,33 @@ public class Robot extends TimedRobot {
 
   @Override
   public void disabledPeriodic() {
+   // Scheduler.getInstance().run();
+
   }
 
   @Override
   public void autonomousInit() {
 
-   
+  //  m_autonomousCommand.start();
+
   }
   @Override
   public void autonomousPeriodic() {
+  //   Scheduler.getInstance().run();
 
     }
 
   @Override
   public void teleopInit() {
- 
+    if (m_autonomousCommand != null) {
+      m_autonomousCommand.cancel();      
+    }  
   }
 
   
   @Override
   public void teleopPeriodic() {
+    // /    Scheduler.getInstance().run();
   }
 
   
@@ -135,8 +145,9 @@ public void robotInit() {
   myCameraThread.setResolutionHigh();
   myCameraThread.getCameraConfig();
 
+  m_autonomousCommand = (new AutonomousCommand());
 
-}
+  }
 }
 
 
