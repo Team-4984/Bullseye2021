@@ -16,12 +16,10 @@ public class TankDriveCommand extends CommandBase {
    * Creates a new TankDriveCommand.
    */
   public TankDriveCommand() {
-    requires(Robot.driveTrain);
+    addRequirements(Robot.driveTrain);
     // Use addRequirements() here to declare subsystem dependencies.
   }
 
-  private void requires(DriveTrain driveTrain) {
-  }
 
   // Called when the command is initially scheduled.
   @Override

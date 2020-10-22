@@ -21,12 +21,11 @@ public class DriveDistanceCommand extends CommandBase {
     d_Distance = distance;
     m_left = leftmotor;
     m_right = rightmotor;
-    requires(Robot.driveTrain);
+    addRequirements(Robot.driveTrain);
 
   }
 
-  private void requires(DriveTrain driveTrain) {
-  }
+
 
   // Called when the command is initially scheduled.
   @Override

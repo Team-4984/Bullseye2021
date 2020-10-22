@@ -18,12 +18,10 @@ public class DriveStraightCommand extends CommandBase {
    * Creates a new DriveStraightCommand.
    */
   public DriveStraightCommand() {
-    requires(Robot.driveTrain);
+    addRequirements(Robot.driveTrain);
     // Use addRequirements() here to declare subsystem dependencies.
   }
 
-  private void requires(DriveTrain driveTrain) {
-  }
 
   // Called when the command is initially scheduled.
   @Override

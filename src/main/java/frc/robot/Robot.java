@@ -10,7 +10,7 @@ package frc.robot;
 import edu.wpi.first.wpilibj.TimedRobot;
 import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
 import edu.wpi.first.wpilibj2.command.Command;
-import frc.robot.commands.AutonomousCommand;
+import frc.robot.commands.AutoCommand;
 import frc.robot.subsystems.DriveTrain;
 import edu.wpi.cscore.UsbCamera;
 import edu.wpi.cscore.VideoSink;
@@ -145,7 +145,7 @@ public void robotInit() {
   myCameraThread.setResolutionHigh();
   myCameraThread.getCameraConfig();
 
-  m_autonomousCommand = (new AutonomousCommand());
+  m_autonomousCommand = (new AutoCommand());
 
   }
 }

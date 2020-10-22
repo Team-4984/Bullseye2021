@@ -32,4 +32,7 @@ public final class Constants {
   public static final double OPEN_LEFT_LOOP_RATE = 0.8;
   public static final double OPEN_RIGHT_LOOP_RATE = 0.8;
 
+  //Auto CMD Commands
+  public static final int SUPER_1_1 = 1;
+  public static final int SUPER_1_2 = -1;
 }

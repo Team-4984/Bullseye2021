@@ -9,6 +9,7 @@ package frc.robot.commands;
 
 import edu.wpi.first.wpilibj2.command.CommandBase;
 import frc.robot.Robot;
+import frc.robot.subsystems.DriveTrain;
 
 public class ReverseTankDriveCommand extends CommandBase {
   /**
@@ -16,6 +17,7 @@ public class ReverseTankDriveCommand extends CommandBase {
    */
   public ReverseTankDriveCommand() {
     // Use addRequirements() here to declare subsystem dependencies.
+    addRequirements(Robot.driveTrain);
   }
 
   // Called when the command is initially scheduled.
@@ -26,7 +28,7 @@ public class ReverseTankDriveCommand extends CommandBase {
   // Called every time the scheduler runs while the command is scheduled.
   @Override
   public void execute() {
-    Robot.driveTrain.setCoastMode();
+    DriveTrain.setCoastMode();
     
     Robot.driveTrain.reverseTankDriveRight(Robot.m_robotContainer.getDriverLeft());
     Robot.driveTrain.reverseTankDriveLeft(Robot.m_robotContainer.getDriverRight());
