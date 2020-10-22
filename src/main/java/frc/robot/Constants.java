@@ -10,7 +10,7 @@ package frc.robot;
 
 public final class Constants {
 
-     //DRIVER JOYSTICK ID
+  //DRIVER JOYSTICK ID
   public static final int DRIVER_JOYSTICK_LEFT = 2;
   public static final int DRIVER_JOYSTICK_RIGHT = 3;
   public static final int DRIVER_JOYSTICK_AXIS = 1;
