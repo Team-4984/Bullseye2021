@@ -38,9 +38,7 @@ public class DriveDistanceCommand extends CommandBase {
   // Called every time the scheduler runs while the command is scheduled.
   @Override
   public void execute() {
-    Robot.driveTrain.Drive(m_left, m_right);
-    System.out.println(Robot.driveTrain.leftFrontDriveEncoder.getPosition()/0.630972);
- 
+    Robot.driveTrain.Drive(m_left, m_right); 
   }
 
   // Called once the command ends or is interrupted.
@@ -52,12 +50,9 @@ public class DriveDistanceCommand extends CommandBase {
   // Returns true when the command should end.
   @Override
   public boolean isFinished() {
-    if ( (int)(Robot.driveTrain.leftFrontDriveEncoder.getPosition()/0.630972) == (d_Distance/2)) {
-      return true;
-    }
-    else {
+
       return false;
      
-    }
+    
   }
 }
