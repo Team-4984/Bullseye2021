@@ -9,6 +9,7 @@ package frc.robot;
 
 import edu.wpi.first.wpilibj.TimedRobot;
 import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
+import frc.robot.subsystems.DriveTrain;
 import edu.wpi.cscore.UsbCamera;
 import edu.wpi.cscore.VideoSink;
 import edu.wpi.cscore.VideoSource;
@@ -16,6 +17,7 @@ import edu.wpi.first.cameraserver.CameraServer;
 
 public class Robot extends TimedRobot {
   
+  public static DriveTrain driveTrain = new DriveTrain();
 
  // private static final boolean myAutotoggle = false;
 

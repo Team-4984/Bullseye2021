@@ -54,4 +54,31 @@ public class RobotContainer {
     // An ExampleCommand will run in autonomous
   }
   */
+
+
+  
+  public double GetDriverJoystickLeftRawAxis(int axis) {
+    return driverJoystickLeft.getRawAxis(axis);
+  }
+ 
+  public double GetDriverJoystickRightRawAxis(int axis) {
+    return driverJoystickRight.getRawAxis(axis);
+  }
+ 
+  public Joystick getDriverLeft() {
+    return driverJoystickLeft;
+  }
+ 
+  public Joystick getDriverRight() {
+    return driverJoystickRight;
+  }
+
+  public double GetOperatorRawAxis(int axis) {
+    return operatorController.getRawAxis(axis);
+  }
+
+  public XboxController getOperator(){
+    return operatorController;
+  }
+
 }
