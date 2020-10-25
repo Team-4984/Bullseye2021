@@ -1,37 +1,18 @@
-## Welcome to GitHub Pages
+## Welcome to GitHub Bullseye2021 
+This is for the help page for the repo Bullseye2021 for seasons 2020-2021
 
-You can use the [editor on GitHub](https://github.com/Team-4984/Bullseye2021/edit/main/docs/index.md) to maintain and preview the content for your website in Markdown files.
+When you commit to this repo, please make a ```FORK``` or a ```New Branch``` and not directly commit to the main page unless you have a Pull Request: Approved.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
-### Markdown
+### SRC(Source Code)
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+To find the SRC code to either Build or Deploy the code...
 
 ```markdown
-Syntax highlighted code block
+Open Repo(https://Team-4984/Bullseye2021)
 
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+- Direct to: src/main/java/frc/robot
+    - Commands(Folder), Subsystems(Folder), Constants, Main, Robot, RobotContainer
 ```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/Team-4984/Bullseye2021/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+Rev 3 - 10/25/2020     ```NolanT108```
