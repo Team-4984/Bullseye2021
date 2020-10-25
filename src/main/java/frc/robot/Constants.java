@@ -37,6 +37,8 @@ public final class Constants {
   //Auto CMD Commands
   public static final int SUPER_1_1 = 1;
   public static final int SUPER_1_2 = -1;
+  public static final int SUPER_1_3 = 1;
+  public static final int SUPER_1_4 = -1;
 
 
   }

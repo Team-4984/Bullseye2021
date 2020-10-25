@@ -21,7 +21,9 @@ public class AutoCommand extends SequentialCommandGroup {
     // Add your commands in the super() call, e.g.
     // super(new FooCommand(), new BarCommand());
     super(new DriveDistanceCommand(Constants.SUPER_1_1, Constants.MOTOR_LEFT_FRONT, Constants.MOTOR_RIGHT_FRONT), // Step 1 GO Forward 1 Inch
-         (new DriveDistanceCommand(Constants.SUPER_1_2, Constants.MOTOR_LEFT_FRONT, Constants.MOTOR_RIGHT_FRONT))); //Step 2 BACK 1 Inch
+         (new DriveDistanceCommand(Constants.SUPER_1_2, Constants.MOTOR_LEFT_FRONT, Constants.MOTOR_RIGHT_FRONT)), //Step 2 BACK 1 Inch
+         (new DriveDistanceCommand(Constants.SUPER_1_3, Constants.MOTOR_LEFT_FRONT, Constants.MOTOR_RIGHT_FRONT)),
+         (new DriveDistanceCommand(Constants.SUPER_1_4, Constants.MOTOR_LEFT_FRONT, Constants.MOTOR_RIGHT_FRONT))); 
 
   }
 }

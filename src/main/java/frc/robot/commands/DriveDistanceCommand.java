@@ -17,8 +17,8 @@ public class DriveDistanceCommand extends CommandBase {
   private double m_left;
   private double m_right;
 
-  public DriveDistanceCommand(int distance, double leftmotor, double rightmotor) {
-    d_Distance = distance;
+  public DriveDistanceCommand(int super11, double leftmotor, double rightmotor) {
+    d_Distance = super11;
     m_left = leftmotor;
     m_right = rightmotor;
     addRequirements(Robot.driveTrain);
