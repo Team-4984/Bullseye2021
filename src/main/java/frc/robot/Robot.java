@@ -21,7 +21,6 @@ public class Robot extends TimedRobot {
   
   public static DriveTrain driveTrain = new DriveTrain();
   Command m_autonomousCommand;
-  Command m_MainautonomousCommand;
  // private static final boolean myAutotoggle = false;
 
   public static RobotContainer m_robotContainer;
