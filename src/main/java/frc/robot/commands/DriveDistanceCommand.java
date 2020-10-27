@@ -7,9 +7,7 @@
 
 package frc.robot.commands;
 
-import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
 import frc.robot.Robot;
-import frc.robot.subsystems.DriveTrain;
 import edu.wpi.first.wpilibj2.command.CommandBase;
 
 public class DriveDistanceCommand extends CommandBase {
@@ -17,8 +15,8 @@ public class DriveDistanceCommand extends CommandBase {
   private double m_left;
   private double m_right;
 
-  public DriveDistanceCommand(int super11, double leftmotor, double rightmotor) {
-    d_Distance = super11;
+  public DriveDistanceCommand(int distance, double leftmotor, double rightmotor) {
+    d_Distance = distance;
     m_left = leftmotor;
     m_right = rightmotor;
     addRequirements(Robot.driveTrain);

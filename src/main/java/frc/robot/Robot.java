@@ -75,7 +75,7 @@ public class Robot extends TimedRobot {
   public static UsbCamera usbCamera1 = null;
   public class CameraThread extends Thread {
     final int CAMERA1 = 0;
-    private final int currentCamera = CAMERA1;
+    //private final int currentCamera = CAMERA1;   //------------------- CAM 1 -----------------///
 
     VideoSink server;
     

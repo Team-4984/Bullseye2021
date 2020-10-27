@@ -10,7 +10,6 @@ package frc.robot.commands;
 import edu.wpi.first.wpilibj2.command.CommandBase;
 import frc.robot.Constants;
 import frc.robot.Robot;
-import edu.wpi.first.wpilibj2.command.SubsystemBase;
 import frc.robot.subsystems.DriveTrain;
 
 public class DriveStraightCommand extends CommandBase {
@@ -22,7 +21,6 @@ public class DriveStraightCommand extends CommandBase {
     // Use addRequirements() here to declare subsystem dependencies.
   }
 
-
   // Called when the command is initially scheduled.
   @Override
   public void initialize() {
@@ -31,7 +29,7 @@ public class DriveStraightCommand extends CommandBase {
   // Called every time the scheduler runs while the command is scheduled.
   @Override
   public void execute() {
-    Robot.driveTrain.setCoastMode();
+    DriveTrain.setCoastMode();
 
     double x =  Robot.m_robotContainer.getDriverRight().getRawAxis(Constants.DRIVER_JOYSTICK_AXIS);
     Robot.driveTrain.Drive(x,-x);

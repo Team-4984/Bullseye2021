@@ -7,21 +7,15 @@
 
 package frc.robot.subsystems;
 
-import edu.wpi.first.wpilibj.drive.DifferentialDrive;
-import edu.wpi.first.wpilibj.interfaces.Gyro;
-import edu.wpi.first.wpilibj.shuffleboard.Shuffleboard;
-import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
 import frc.robot.Constants;
-import frc.robot.Robot;
+
 
 import com.revrobotics.CANEncoder;
 import com.revrobotics.CANSparkMax;
 import com.revrobotics.CANSparkMax.IdleMode;
 import com.revrobotics.CANSparkMaxLowLevel.MotorType;
 
-import edu.wpi.first.wpilibj.DriverStation;
 import edu.wpi.first.wpilibj.Joystick;
-
 import edu.wpi.first.wpilibj2.command.SubsystemBase;
 
 public class DriveTrain extends SubsystemBase {
@@ -54,27 +48,27 @@ public class DriveTrain extends SubsystemBase {
     //rightBackDriveMotor.setIdleMode(IdleMode.kCoast);
   }
 
-  public void tankDriveLeft(Joystick joystick) {
+  public static void tankDriveLeft(Joystick joystick) {
     leftFrontDriveMotor.set(joystick.getRawAxis(Constants.DRIVER_JOYSTICK_AXIS));
     //leftBackDriveMotor.set(joystick.getRawAxis(Constants.DRIVER_JOYSTICK_AXIS));
   }
 
-  public void tankDriveRight(Joystick joystick) {
+  public static void tankDriveRight(Joystick joystick) {
     rightFrontDriveMotor.set(-joystick.getRawAxis(Constants.DRIVER_JOYSTICK_AXIS));
     //rightBackDriveMotor.set(-joystick.getRawAxis(Constants.DRIVER_JOYSTICK_AXIS));
   }
 
-  public void reverseTankDriveLeft(Joystick joystick) {
+  public static void reverseTankDriveLeft(Joystick joystick) {
     leftFrontDriveMotor.set(-joystick.getRawAxis(Constants.DRIVER_JOYSTICK_AXIS));
   //  leftBackDriveMotor.set(-joystick.getRawAxis(Constants.DRIVER_JOYSTICK_AXIS));
   }
 
-  public void reverseTankDriveRight(Joystick joystick) {
+  public static void reverseTankDriveRight(Joystick joystick) {
     rightFrontDriveMotor.set(joystick.getRawAxis(Constants.DRIVER_JOYSTICK_AXIS));
    // rightBackDriveMotor.set(joystick.getRawAxis(Constants.DRIVER_JOYSTICK_AXIS));
   }
 
-  public void Drive(double left, double right) {
+  public static void Drive(double left, double right) {
     leftFrontDriveMotor.set(left);
   //  leftBackDriveMotor.set(left);
     rightFrontDriveMotor.set(right);
